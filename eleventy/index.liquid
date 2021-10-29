@@ -12,15 +12,19 @@ return data.slice(-3).map(post => post).reverse();
 }
 }
 }
+pagination:
+data: collections.projects
+size: 3
+reverse: true
+alias: projects
 ---
 
 {%- include "components/home.njk" -%}
-<div class="flex mt-8 md:mt-4">
-  <div class="md:border md:border-gray-200 md:shadow-md md:px-16 md:py-8 mx-auto">
-    <h3 class="text-3xl text-gray-800">Blog</h3>
+{%- include "components/projects_section.njk" -%}
+<div class="flex flex-col">
+    <h3 class="text-3xl mb-5 font-bold text-gray-800">Latest articles</h3>
     {% include "postslist.njk" %}
     {% if posts.size != 0 %}
-    <a class="text-lg hover:text-gray-700 text-blue-700" href="/blog">View all articles</a>
+    <a class="text-lg hover:text-gray-800 text-gray-600" href="/blog">View all articles</a>
     {% endif %}
-  </div>
 </div>

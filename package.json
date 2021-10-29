@@ -3,12 +3,13 @@
   "version": "2.0.0",
   "description": "personal blog of Samy Ouaret",
   "scripts": {
-    "buildcss": "postcss src/css/*.css --base --dir public/static/css --env=prod",
+    "watch": "yarn run watcheleventy & yarn run watchcss",
     "watchcss": "postcss src/css/*.css --base --dir public/static/css --watch --env=dev",
     "watcheleventy": "eleventy --watch",
     "serve": "eleventy --serve",
     "debugeleventy": "DEBUG=* eleventy",
     "buildeleventy": "eleventy",
+    "buildcss": "postcss src/css/*.css --base --dir public/static/css --env=prod",
     "build": "postcss src/css/*.css --base --dir public/static/css --env=prod && eleventy"
   },
   "repository": {

@@ -26,6 +26,12 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "eleventy/static/images": "static/images" });
     eleventyConfig.addPassthroughCopy({ "eleventy/config/*": "/" });
 
+    // copy projects static files like images and css
+    eleventyConfig.addPassthroughCopy({ "eleventy/projects/**/*.jpg": "projects/static" });
+    eleventyConfig.addPassthroughCopy({ "eleventy/projects/**/*.png": "projects/static" });
+    eleventyConfig.addPassthroughCopy({ "eleventy/projects/**/*.gif": "projects/static" });
+    eleventyConfig.addPassthroughCopy({ "eleventy/projects/**/*.css": "projects/static" });
+    // copy blog static files like images and css
     eleventyConfig.addPassthroughCopy({ "eleventy/blog/**/*.jpg": "blog/static" });
     eleventyConfig.addPassthroughCopy({ "eleventy/blog/**/*.png": "blog/static" });
     eleventyConfig.addPassthroughCopy({ "eleventy/blog/**/*.gif": "blog/static" });
@@ -66,8 +72,17 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("dump", function (value) {
         console.log(value);
     });
-    eleventyConfig.addFilter("contains", function (value) {
+
+    eleventyConfig.addFilter("is_blog", function (value) {
         return value.includes('/blog');
+    });
+
+    eleventyConfig.addNunjucksFilter("top", function (list) {
+        return list.reverse().slice(0, 4);
+    });
+
+    eleventyConfig.addNunjucksFilter("upper", function (value) {
+        return value.toUpperCase();
     });
 
     eleventyConfig.addFilter("trimSlashes", function (value) {
@@ -82,6 +97,10 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("readableDate", dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc+1' }).toFormat("LLL, dd yyyy");
     });
+    
+    eleventyConfig.addFilter("currentYear", dateObj => {
+        return new Date().getUTCFullYear();
+    });
 
     eleventyConfig.addFilter("utcDate", timestamp => {
         return (new Date(timestamp)).toUTCString()
@@ -89,6 +108,7 @@ module.exports = function (eleventyConfig) {
 
     // add a collection will be accessible form collections.TagList
     eleventyConfig.addCollection("tagList", require("./eleventy/_11ty/getTagList"));
+    eleventyConfig.addCollection("topProjects", require("./eleventy/_11ty/getTopProjects"));
 
     return {
         templateFormats: [

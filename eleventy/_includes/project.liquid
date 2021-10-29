@@ -1,0 +1,12 @@
+---
+layout: layout.njk
+templateClass: lg:w-9/12 xl:w-8/12
+permalink: "projects/{{ title | slugify }}/index.html"
+styles: ["public/static/css/post.css","eleventy/static/css/theme.css"]
+---
+
+<article id="article" class="text-gray-800 leading-relaxed mt-4" style="font-size: 1.15rem;">
+{%- include "components/post/post_header.njk" -%}
+    {{ content | safe }}
+</article>
+{{ styles | cssminFiles }}

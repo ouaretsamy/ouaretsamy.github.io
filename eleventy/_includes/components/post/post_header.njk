@@ -3,11 +3,11 @@
     <h1 style="margin-bottom: 0;" id="post-tilte" class="text-gray-800">{{title}}</h1>
     <time class="text-sm ml-1 text-gray-700">{{ date | readableDate }}</time>
   {%- endif -%}
-  {%- if image -%}
+  {%- if image and image.file -%}
     <img defer src="{{image.file}}" alt="{{title}}" class="mt-4 mx-auto max-w-full" />
-  {%- endif -%}
-  {%- if image.credit -%}
-   <p class="text-center text-md">Picture by <a class="text-blue-700" href="{{image.credit.link}}">{{image.credit.name}}</a></p>
+    {%- if image.credit -%}
+    <p class="text-center text-md">Picture by <a class="text-blue-700" href="{{image.credit.link}}">{{image.credit.name}}</a></p>
+    {%- endif -%}
   {%- endif -%}
   {%- if description -%}
    <p class="my-4 text-2xl"><em>{{description}}</em></p>

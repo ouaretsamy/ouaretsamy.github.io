@@ -1,33 +1,4 @@
- <div class="flex flex-col md:flex-row mt-8">
-     <div class="md:w-1/3 w-full sm:mr-4 mb-8">
-         <div class="flex flex-col justify-center items-center">
-             <div class="rounded flex justify-center">
-                 <img src="{{ metadata.author.image_md }}"
-                 alt="{{ metadata.author.name }}"
-                  class="rounded-full shadow-lg max-w-full w-9/12 md:w-auto" />
-             </div>
-             {%- include "components/media.njk" -%}
-         </div>
-     </div>
-     <div class="w-full md:ml-4 md:w-2/3">
-         <div class="flex flex-col">
-             <div class="leading-normal">
-                 <h2 class="text-3xl text-gray-900 leading-normal">
-                     <span class="text-blue-800">Hi, I'm {{ metadata.author.name }}</span>,
-                     I’m a backend Engineer, I like to write quality software and web applications.</h2>
-                 <p class="text-gray-800 leading-normal sm:text-2xl my-2 text-xl" style="line-height:inherit">I have been doing web development for more than 5
-                     years using PHP, and Javascript, lately with Nodejs, and Reactjs.</p>
-                 <p class="text-gray-900 leading-normal text-xl sm:text-2xl my-2" style="line-height:inherit">I have a Bachelor's degree in Computer systems,
-                     I study an MSc in Computer Networking and Multimedia.
-                 </p>
-                 <p class="text-gray-900 leading-normal text-xl sm:text-2xl mb-4" style="line-height:inherit">
-                     I'm available for freelance, backend or a front-end
-                     role, are you interested in working with me? please do not hesitate to contact me.</p>
-                 <a href="mailto:samyouaret13@gmail.com"
-                     class="mt-2 bg-blue-500 rounded-sm p-2 sm:p-3 text-white text-sm sm:text-md hover:bg-blue-800 shadow-sm">get in
-                     touch</a>
-
-             </div>
-         </div>
-     </div>
+<div class="flex flex-col mt-8">
+    {%- include "components/header.njk" -%}
+    {%- include "components/what-I-do.njk" -%}
  </div>

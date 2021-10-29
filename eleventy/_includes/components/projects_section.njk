@@ -1,0 +1,21 @@
+<div class="flex flex-col mb-16">
+    <h3 class="text-3xl mb-5 font-bold text-gray-800">Latest Projects</h3>
+    <div class="flex flex-co md:flex-row flex-wrap">
+        {%- for project in collections.topProjects -%}
+        <div class="md:w-1/3 w-full flex flex-col p-2">
+            <img defer src="{{project.data.image.file}}" alt="{{project.data.title}}" class="mt-4 mx-auto max-h-72 w-full" />
+            <a href="{{project.url}}" class="my-2 text-2xl block text-gray-800 hover:text-blue-700">
+                {{project.data.title}}
+            </a>
+            <p>{{project.data.description}}</p>
+            <a href="{{project.url}}" class="text-lg my text-gray-800 underline hover:text-gray-900">
+                explore &rarr;</a><br>
+        </div>
+        {% else %}
+        <p class="text-center text-gray-600 text-lg">No Project yet.</p>
+        {% endfor %}
+    </div>
+    {% if collections.topProjects.size != 0 %}
+    <a class="my-5 text-lg hover:text-gray-800 text-gray-600" href="/projects">View all projects</a>
+    {% endif %}
+</div>
