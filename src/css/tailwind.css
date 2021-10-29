@@ -4,11 +4,16 @@
 /* purgecss end ignore */
 
 .nav {
-    @apply flex flex-wrap justify-between;
+    @apply flex flex-wrap justify-between items-center;
 }
 
+
 .nav-links {
-    @apply flex flex-col w-full h-0 overflow-hidden;
+    @apply flex flex-col w-full;
+}
+
+.toggle-area {
+    @apply w-full h-0 overflow-hidden;
 }
 
 @screen md {
@@ -18,6 +23,9 @@
 
     .nav-links {
         @apply flex-row justify-between;
+    }
+
+    .toggle-area {
         width: auto;
         height: auto !important;
         overflow: auto !important;
@@ -37,18 +45,13 @@
 }
 
 .nav-toggler {
-    @apply w-12 h-12 border border-gray-400 p-1 flex flex-col cursor-pointer rounded-md;
+    @apply w-10 h-10 border border-gray-200 rounded-sm p-1 cursor-pointer;
 }
 
 @screen md {
     .nav-toggler {
         display: none;
     }
-}
-
-.toggler-bar {
-    @apply bg-gray-600 block mt-2;
-    height: 2px;
 }
 
 .page-next,

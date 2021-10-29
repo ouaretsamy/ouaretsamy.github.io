@@ -87,24 +87,21 @@
                     class="fa fa-linkedin"></i></a>
         </div>
         <div class="pt-6 pb-2 md:text-lg text-sm">
-            built with
-            <a class="text-gray-700 hover:text-gray-900" href="https://www.11ty.dev/">11ty</a>,
-            <a class="text-gray-700 hover:text-gray-900" href="https://tailwindcss.com/">TailwindCss</a>, and hosted by
-            <a class="text-gray-700 hover:text-gray-900" href="https://netlify.com/"> Netlify &hearts;</a>.
+            All rights reserved {{metadata.author.name}} &copy; {{ "" | currentYear }}
         </div>
     </div>
 
 {%-  if script -%}
   <script src="{{script}}"></script>
 {%-  endif -%}
-    <link defer href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/a4efe37a32.js"></script>
+<link defer href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> -->
+<script defer src="https://use.fontawesome.com/a4efe37a32.js"></script>
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function (e) {
     e.preventDefault();
     var toggler = document.querySelector('.nav-toggler');
     toggler.addEventListener('click', function (e) {
-        var links = document.querySelector('.nav-links');
+        var links = document.querySelector('.toggle-area');
         var collapsed = links.getAttribute('data-collapsed');
         if (collapsed === "true") {
             links.style.height = "auto";

@@ -1,0 +1,10 @@
+---
+layout: layout.njk
+templateClass: lg:w-9/12 xl:w-8/12
+styles: ["public/static/css/post.css"]
+---
+
+<article id="article" class="text-gray-700 leading-relaxed mt-16 text-lg">
+    {{ content | safe }}
+</article>
+{{ styles | cssminFiles }}

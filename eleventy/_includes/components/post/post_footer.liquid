@@ -15,15 +15,15 @@
     </a>
   </div>
   <div class="p-2 mb-16">
-    <span class="uppercase text-sm text-gray-700 mr-2">Share article </span>
+    <span class="text-base text-gray-800 mr-2">Share article on </span>
     {%- capture postUrl -%}{{metadata.url}}{{page.url}}{%- endcapture -%}
-    <a class="bg-blue-400 text-lg text-white rounded-full w-8 h-8 inline-block text-center leading-relaxed"
+    <a class="text-lg hover:bg-gray-300 text-gray-600 border border-gray-200 rounded-full w-8 h-8 inline-block text-center leading-relaxed"
       href="http://twitter.com/share?text={{title | url_encode}}&url={{postUrl}}">
       <i class="fa fa-twitter"></i></a>
-    <a class="bg-blue-600 text-lg text-white rounded-full w-8 h-8 inline-block text-center leading-relaxed"
+    <a class="text-lg hover:bg-gray-300 text-gray-600 border border-gray-200 rounded-full w-8 h-8 inline-block text-center leading-relaxed"
       href="https://www.linkedin.com/shareArticle?mini=true&url={{postUrl}}&title={{title | url_encode}}">
       <i class="fa fa-linkedin"></i></a>
-    <a class="bg-blue-800 text-lg text-white rounded-full w-8 h-8 inline-block text-center leading-relaxed"
+    <a class="text-lg hover:bg-gray-300 text-gray-600 border border-gray-200 rounded-full w-8 h-8 inline-block text-center leading-relaxed"
       href="https://www.facebook.com/sharer/sharer.php?u={{postUrl}}">
       <i class="fa fa-facebook"></i></a>
   </div>

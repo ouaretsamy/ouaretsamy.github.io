@@ -1,6 +1,12 @@
 module.exports = function (collection) {
     let tagSet = new Set();
-    // console.log(collection.getAll());
+    // for (const col of collection.getAll()) {
+    //     console.log("------------------------");
+    //     console.log(col);
+    //     console.log("------------------------");
+    //     console.log();
+    //     console.log();
+    // }
     collection.getAll().forEach(function (item) {
         if ("tags" in item.data) {
             let tags = item.data.tags;
@@ -12,6 +18,7 @@ module.exports = function (collection) {
                     case "nav":
                     case "post":
                     case "posts":
+                    case "projects":
                     case "no":
                         return false;
                 }

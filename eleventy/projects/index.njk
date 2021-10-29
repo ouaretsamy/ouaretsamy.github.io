@@ -1,19 +1,17 @@
 ---
 eleventyExcludeFromCollections: true
-tags: posts
 layout: layout.njk
 templateClass: lg:w-11/12 xl:w-10/12 max-w-screen-lg
-title: Blog | Samy Ouaret
+title: Projects | Samy Ouaret
 style: /static/css/tailwind.css
 pagination:
-  data: collections.posts
+  data: collections.projects
   size: 40
   reverse: true
-  alias: posts
+  alias: projects
 ---
-
 <div class="mt-16">
-{% include "postslist.njk" %}
+{% include "projectslist.njk" %}
 </div>
 <nav aria-labelledby="my-pagination">
   <ol class="my-8 flex flex-row justify-between">
