@@ -1,12 +1,5 @@
 module.exports = function (collection) {
     let tagSet = new Set();
-    // for (const col of collection.getAll()) {
-    //     console.log("------------------------");
-    //     console.log(col);
-    //     console.log("------------------------");
-    //     console.log();
-    //     console.log();
-    // }
     collection.getAll().forEach(function (item) {
         if ("tags" in item.data) {
             let tags = item.data.tags;

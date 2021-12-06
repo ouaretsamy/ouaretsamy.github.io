@@ -31,16 +31,19 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "eleventy/projects/**/*.png": "projects/static" });
     eleventyConfig.addPassthroughCopy({ "eleventy/projects/**/*.gif": "projects/static" });
     eleventyConfig.addPassthroughCopy({ "eleventy/projects/**/*.css": "projects/static" });
+    eleventyConfig.addPassthroughCopy({ "eleventy/projects/**/*.svg": "projects/static" });
     // copy blog static files like images and css
     eleventyConfig.addPassthroughCopy({ "eleventy/blog/**/*.jpg": "blog/static" });
     eleventyConfig.addPassthroughCopy({ "eleventy/blog/**/*.png": "blog/static" });
     eleventyConfig.addPassthroughCopy({ "eleventy/blog/**/*.gif": "blog/static" });
     eleventyConfig.addPassthroughCopy({ "eleventy/blog/**/*.css": "blog/static" });
+    eleventyConfig.addPassthroughCopy({ "eleventy/blog/**/*.svg": "blog/static" });
     // add markdown parsers
     let options = {
         html: true,
         breaks: false,
-        linkify: true
+        linkify: true,
+        typographer: true,
     };
     // combine the two markdown parsers
     let markdownLib = markdownIt(options).use(markdownItAnchor);
@@ -97,7 +100,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("readableDate", dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc+1' }).toFormat("LLL, dd yyyy");
     });
-    
+
     eleventyConfig.addFilter("currentYear", dateObj => {
         return new Date().getUTCFullYear();
     });

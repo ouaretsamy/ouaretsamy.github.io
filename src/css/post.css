@@ -69,9 +69,15 @@
     @apply p-4 border border-l-8 mb-5 border-gray-400;
 }
 
-#article ul,
+#article ul{
+     @apply  px-4 list-disc;
+}
+#article li{
+     @apply  pb-1;
+}
+
 #article ol {
-    @apply p-4 list-disc;
+    @apply px-4 list-decimal;
 }
 
 #article table,
@@ -87,4 +93,12 @@
 #article table th,
 #article table td {
     @apply p-4;
+}
+
+#article pre:not(.language-js) {
+    @apply p-2 bg-gray-200 text-left;
+}
+
+#article img {
+    @apply mx-auto my-5;
 }
