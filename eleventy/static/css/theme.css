@@ -208,3 +208,9 @@ pre[class*="language-"] {
 .token.variable {
     color: #f07178;
 }
+
+#article pre:not([class]) {
+    padding: 8px;
+    background-color: #d5dde5;
+    text-align:left;
+}

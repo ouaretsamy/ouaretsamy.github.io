@@ -95,7 +95,7 @@
     @apply p-4;
 }
 
-#article pre:not(.language-js) {
+#article pre:not([class]) {
     @apply p-2 bg-gray-200 text-left;
 }
 
