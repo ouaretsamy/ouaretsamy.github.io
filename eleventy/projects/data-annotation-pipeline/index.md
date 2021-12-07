@@ -1,12 +1,12 @@
 ---
-title : Fast csv extractor
+title : Image annotation pipeline
 date: 2021-09-26
 image:
   file: /projects/static/pipeline.jpg
   credit:
     name: Sigmund
     link: https://unsplash.com/@sigmund
-description: Building fast csv extractor from MYSQl to ingest data into data lake.
+description: Building an image data annotation pipeline for Farmy.ai startup
 ---
 
 ## coming soon...
