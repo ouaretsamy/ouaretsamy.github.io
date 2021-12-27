@@ -211,6 +211,6 @@ pre[class*="language-"] {
 
 #article pre:not([class]) {
     padding: 8px;
-    background-color: #d5dde5;
+    background-color: #e0e3e6;
     text-align:left;
 }

@@ -7,16 +7,16 @@ image:
     name: Aron Visuals
     link: https://unsplash.com/@aronvisuals
 
-description: Waiting correctly for requests in puppeteer could be ticky, this package ensures waiting for all requests to finish before doing some other things.
+description: Waiting correctly for requests in puppeteer could be tricky, this package ensures waiting for all outgoing requests.
 ---
 
 ## Introduction
 
-This [Package](https://github.com/samyouaret/puppeteer-response-waiter) is useful when you need to wait for all responses to be received to do something like manipulating the DOM, usually when you need to **track many requests at once** or some requests are **lately received**, many people find it useful ([almosts 1000 download per week](https://www.npmjs.com/package/puppeteer-response-waiter)).
+This [Package](https://github.com/samyouaret/puppeteer-response-waiter) is useful when you need to wait for all responses to be received to do something like manipulating the DOM. Usually, when you need to **track many requests at once** or some requests are **lately received**, many people find it useful ([almosts 1000 download per week](https://www.npmjs.com/package/puppeteer-response-waiter)).
 
 Some use cases could be **scraping an infinite scroll** page and mostly you do not know which requests to track or to wait for.
 
-It a simple but powerful package, it may be used even to wait for thousands of requests at once and it guarantees to wait for all responses.
+It is a simple but powerful package, it may be used even to wait for thousands of requests at once and it guarantees to wait for all responses.
 
 ## Quick Tutorial
 
@@ -24,13 +24,13 @@ Using the package is fairly simple, you can install it with `npm` or `yarn` easi
 
     npm i puppeteer-response-waiter
 
-To install with `yarn`
+To install it with `yarn`
 
     yarn add puppeteer-response-waiter
 
 ## Usage
 
-Theses examples from the documentation demonstrate basic usage of the package.
+These examples from the documentation demonstrate the basic usage of the package.
 
 ```js
 const puppeteer = require('puppeteer');
