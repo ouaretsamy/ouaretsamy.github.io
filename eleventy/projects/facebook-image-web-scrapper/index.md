@@ -45,6 +45,17 @@ We are going to explain those steps briefly
 
 Unfortunately, the Facebook Web scraper is private, We love open source but it is something out of my control. Here is a real demo of the web scraper.
 
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAE0gG4avWo&#x2F;watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAE0gG4avWo&#x2F;watch?utm_content=DAE0gG4avWo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Video</a> by Samy Ouaret
+
+</br>
+
 ## Challenges
 
 Apparently, Web Scraping is a challenging Task especially from A Big company like **Facebook** that make a tremendous effort to block and track automated scrapers and bots ([See link](https://about.fb.com/news/2021/04/how-we-combat-scraping/)), in most cases the process is the same, but tools may be different Since different Website deploy many defensive tools and mechanisms to discover and block web scrapers.
