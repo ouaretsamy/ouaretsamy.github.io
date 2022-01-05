@@ -4,19 +4,36 @@ layout: aboutme_layout.liquid
 
 # About me
 
-I’m a backend engineer, I have been doing web development since 2015, I’m based currently in Algeria Where I was born and I've got My Bachelor's degree in Computer systems, I study an MSc in Computer Networking and Multimedia. I like to write quality software and web applications. I care more about details, clean code, testing, and APIs, I write code using PHP, Javascript, NodeJs, and React to build web solutions and websites. I like reading about history and sociology, playing and watching football. 
+Hey, I'm Samy, A backend Engineer, I started doing web development in 2015, I have Bachelor’s degree in Computer Systems, and a Master’s degree in Computer Networking and Multimedia.
 
-## skills
+I Strive to write high-quality software and web applications. I care about details, clean code, tests, and APIs.
 
-- Good knowledge of software engineering and web technologies, Rest APIs, HTTP,Network Protocols.
-- Good knowledge of modern PHP And Javascript,NodeJS,i use some Frameworks like Laraval, React, ExpressJS.
+## Skills
+
+- Strong knowledge of software development and modern web technologies, Rest APIs, HTTP, and network protocols.
+- Strong knowledge of database design and normalization.
+- Ability to work in a team, good application of Agile frameworks and methodologies.
+- Basic knowledge of data engineering and DevOps.
+- Solid knowledge of writing tests and TDD.
 - Good knowledge of modern Front-end technologies(HTML5, CSS3, javascript, ES6, ReactJS).
-- Quality is important, I Make sure to write testable code mainly using PHPUnit, jest, or other tools when needed.
-- I use Git/Github as version control and for collaborating.
-- I have strong knowledge about database design and normalization, mainly I use Mysql, Redis, SQLite for testing.
-- Basic knowledge about CI/CD, and basic deployment with AWS and Netlify.
-- I have good knowledge of Operating Systems and servers.
 
+## Experience
+
+**Software Engineer Intern Mar 2021-Sep 2021 (7mo) [Farmy.ai](https://farmy.ai)**
+
+- Integrating **[Farmy.ai](https://farmy.ai)** data sources into a data lake.
+- Build a data pipeline for data cleansing and annotation.
+- Integrating data annotations REST APIs.
+- Automate data collection tasks, such as building web scrapers for social media images.
+
+## Projects
+
+You can find all projects on [projects](/projects), here are some of the major tasks:
+
+- Data Lake on AWS S3 and DynamoDB and Lambda for Farmy.ai startup.
+- Group posts Facebook web scraper.
+- Data annotation pipeline for Farmy.ai startup.
+- Npm package to solve puppeteer waits for response problem.
 
 ## Education
 
@@ -28,10 +45,11 @@ I’m a backend engineer, I have been doing web development since 2015, I’m ba
 
 **Mohammed Elbachir El Ibrahimi university**
 
-## Stack used
+## Technology Stack
 
-- **Languages and Frameworks**: PHP, Javascript, NodeJs, Html5, CSS3, ReactJS,ExpressJS 4, TailwindCSS.
-- **Databases**: MYSQL, Redis, SQLite.
-- **Development tools**: Vscode, Git, Webpack , Npm, Composer, Jira.
+- **Languages and Frameworks**: Javascript, PHP, Typescript, NodeJs, Expressjs, HTML5, CSS3, ReactJS, TailwindCSS, Laravel, PHPUnit, Jest.
+- **Databases**: PostgreSQL, MYSQL, MongoDB.
+- **Development tools**: Vscode, Git, Webpack, Npm, Composer, Jira.
+- **Others**: Apache Airflow, Python, AWS Lambda, AWS S3, AWS EC2.
 
 
