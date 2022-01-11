@@ -10,9 +10,11 @@ description: Building an elearning platform for CS faculty of university of BBA.
 
 The effectiveness of open learning is increasing worldwide because of the flexibility in accessing the learning materials from anywhere at any time. Implementing open learning through online video tutorials and online classes helps the majority of the student strength comprises working-class people.
 
-## What this platform
+## What it is this platform?
 
 We will try to explain briefly the e-learning platform built for the Faculty of mathematics and informatics of the university of BBA, the platform mainly has 3 types of actors students, teachers, and administrators. and it has 3 spaces.
+
+[This is link](https://github.com/samyouaret/fmi-elearning) of the GitHub repository.
 
 ### Coursework instructor
 
