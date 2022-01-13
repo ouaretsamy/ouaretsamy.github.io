@@ -4,13 +4,11 @@ layout: aboutme_layout.liquid
 
 # About me
 
-Hey, I'm Samy, A backend Engineer, I started doing web development in 2015, I have Bachelor’s degree in Computer Systems, and a Master’s degree in Computer Networking and Multimedia.
-
-I Strive to write high-quality software and web applications. I care about details, clean code, tests, and APIs.
+Hey, I'm Samy, As a Backend Engineer, I started doing web development in 2015, I have Bachelor's degree in Computer Systems, and a Master's degree in Computer Networking and Multimedia. I Strive to write high-quality software and web applications. I care about details, clean code, tests, and APIs.
 
 ## Skills
 
-- Strong knowledge of software development and modern web technologies, Rest APIs, HTTP, and network protocols.
+- Strong knowledge of software development and modern web technologies, Rest APIs, HTTP, and other network protocols like SSL/TLS.
 - Strong knowledge of database design and normalization.
 - Ability to work in a team, good application of Agile frameworks and methodologies.
 - Basic knowledge of data engineering and DevOps.
@@ -47,9 +45,10 @@ You can find all projects on [projects](/projects), here are some of the major t
 
 ## Technology Stack
 
-- **Languages and Frameworks**: Javascript, PHP, Typescript, NodeJs, Expressjs, HTML5, CSS3, ReactJS, TailwindCSS, Laravel, PHPUnit, Jest.
-- **Databases**: PostgreSQL, MYSQL, MongoDB.
-- **Development tools**: Vscode, Git, Webpack, Npm, Composer, Jira.
+- **Languages and Frameworks**: Javascript, Typescript, NodeJs, Expressjs, HTML5, CSS3, ReactJS, TailwindCSS, Jest, PHP PHPUnit, Laravel.
+- **Databases**: PostgreSQL, MongoDB.
+- **Development tools**: Git, Github, Docker, GitHub Actions, AzureDevOps scrum, VSCode.
+- **Web servers**: Nginx core fundamentals (SSL/TLS Setup, Proxying, Load balancing, Caching, Static files serving).
 - **Others**: Apache Airflow, Python, AWS Lambda, AWS S3, AWS EC2.
 
 

@@ -3,7 +3,7 @@ title : Imagel, Images sharing application
 date: 2020-07-21
 image:
   file: /projects/static/imagel-pictures_showed.png
-description: Image sharing application Powered by enthuasist everywhere.
+description: Image sharing application Powered for enthuasist everywhere.
 ---
 
 ## What it is this project?
@@ -12,7 +12,7 @@ An application to share images includes authentication, and it is built with Exp
 
 [This is link](https://github.com/samyouaret/imagel) of the GitHub repository.
 
-### Imagel application Pages/Compoenents
+### Imagel application Pages/Components
 
 #### Images show
 
