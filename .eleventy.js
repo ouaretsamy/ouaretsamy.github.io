@@ -6,7 +6,6 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const CleanCSS = require("clean-css");
 const path = require('path');
-const fs = require('fs');
 
 module.exports = function (eleventyConfig) {
 

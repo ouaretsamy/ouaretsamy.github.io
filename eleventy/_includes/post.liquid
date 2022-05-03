@@ -5,7 +5,7 @@ permalink : "blog/{{ title | slugify }}/index.html"
 styles: ["eleventy/static/css/theme.css","public/static/css/post.css"]
 ---
 
-<article id="article" class="text-gray-800 leading-relaxed mt-16" style="font-size: 1.15rem;">
+<article id="article" class="text-gray-800 leading-relaxed mt-16" style="font-size: 1.1rem;">
 {%- include "components/post/post_header.njk" -%}
     {{ content | safe }}
 </article>

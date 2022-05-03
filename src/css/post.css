@@ -13,20 +13,25 @@
     @apply mb-5;
 }
 
-#article ol ,#article ul{
+#article ol,
+#article ul {
     @apply mb-5;
 }
 
 #article pre,
 #article code {
-    @apply mb-5;
+    @apply mb-5 text-base;
 }
 
-#article h4, #article h5, #article h6 {
+#article h4,
+#article h5,
+#article h6 {
     @apply mb-5 font-bold text-gray-900;
 }
 
-#article h1,#article h2,#article h3 {
+#article h1,
+#article h2,
+#article h3 {
     @apply mb-5 font-bold text-gray-900;
 }
 
@@ -72,11 +77,12 @@
     @apply p-4 border border-l-8 mb-5 border-gray-400;
 }
 
-#article ul{
-     @apply  px-4 list-disc;
+#article ul {
+    @apply px-4 list-disc;
 }
-#article li{
-     @apply  pb-1;
+
+#article li {
+    @apply pb-1;
 }
 
 #article ol {
