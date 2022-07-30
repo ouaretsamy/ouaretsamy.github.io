@@ -33,7 +33,7 @@
 }
 
 .nav-item {
-    @apply text-gray-800 text-lg p-3;
+    @apply text-gray-900 text-base p-3;
 }
 
 .nav-item:hover {

@@ -1,18 +1,27 @@
 <div class="flex flex-col md:flex-row md:mb-16 mb-14">
-    <div class="md:w-1/2 flex flex-col items-baseline w-full sm:mr-4 mb-8">
-        <p class="text-2xl mb-2 text-gray-800">The personal website of</p>
-        <h3 class="text-5xl mb-2 font-black text-gray-800">Samy Ouaret</h3>
-        <p class="text-3xl mb-2 font-medium text-gray-600 leading-snug">Backend Engineer, builder of quality software and
+    <div class="md:w-1/2 md:mt-14 flex flex-col items-baseline w-full sm:mr-4 mb-8">
+        <h3 class="text-7xl mb-3 font-black text-gray-800">Samy Ouaret</h3>
+        <p class="text-3xl mb-2 text-gray-600 leading-snug">Backend Engineer, builder of quality software and
             applications.</p>
         <a href="mailto:samyouaret13@gmail.com"
             class="mt-5 w-auto whitespace-nowrap bg-blue-700 rounded-sm p-2 sm:p-3 text-white text-sm sm:text-base hover:bg-blue-800 shadow-sm">get
             in touch</a>
+        <div class="flex flex-col mt-7">
+            <p class="text-3xl mb-4 text-gray-700">What I do?</p>
+            <p class="text-lg leading-10 text-gray-700">
+                I'm a Software Engineer, currently working at <a class="text-blue-700"
+                    href="https://maystro-delivery.com" target="_blank" rel="noopener noreferrer">Maystro Delivery</a>,
+                I Strive to write high-quality software and web applications.
+                I care about high quality, clean code, tests, and APIs.
+                I'm also a Cloud enthusiast, and an <strong>AWS community builder</strong>.
+            </p>
+        </div>
     </div>
     <div class="md:w-1/2 justify-between w-full sm:mr-4 mb-8">
         <div class="center">
-            <div class="rounded flex justify-center">
-                <img src="{{ metadata.author.image_md }}" alt="{{ metadata.author.name }}"
-                    class="rounded-full max-w-full w-3/4 md:w-1/2" />
+            <div class="flex justify-center">
+                <img src="{{ metadata.author.new_image }}" alt="{{ metadata.author.name }}"
+                    class="max-w-full h-1/3 md:w-auto" />
             </div>
         </div>
     </div>
