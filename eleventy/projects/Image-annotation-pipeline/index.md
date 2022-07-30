@@ -1,6 +1,7 @@
 ---
 title : Image annotation pipeline
 date: 2021-09-26
+rank:
 image:
   file: /projects/static/pipeline.jpg
   credit:

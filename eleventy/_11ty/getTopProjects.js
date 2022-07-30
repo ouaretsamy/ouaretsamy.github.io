@@ -8,7 +8,9 @@ module.exports = function (collection) {
         }
     });
 
-    console.log(projects.length);
-
+    projects.sort((a, b) => {
+        console.log(a.data);
+        return new Date(b.data.date) - new Date(a.data.date)
+    });
     return projects.reverse().slice(0, 6);
 };
