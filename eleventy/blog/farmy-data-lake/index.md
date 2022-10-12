@@ -2,7 +2,7 @@
 title : Farmy data lake
 date: 2021-09-28
 image:
-  file: /projects/static/data-lake.jpg
+  file: /blog/static/data-lake.jpg
   credit:
     name: Dirk Von Loen Wagner
     link: https://unsplash.com/@jordanharrison
@@ -26,7 +26,7 @@ Data Lake allows us to essentially not think about the processing required until
  
 Since **Farmy** startup depends heavily on Data, The Data Lake is at the heart of its deep learning training. Developing such a system was not a clear path from the start, given the requirements and concerns of developing a robust, scalable, efficient, and extensible system.
 
-![Farmy.ai data lake](/projects/static/complete-Farmy-data-lake-architecture.svg)
+![Farmy.ai data lake](/blog/static/complete-Farmy-data-lake-architecture.svg)
 
 ### Farmy's Data lake zones
 
@@ -68,7 +68,7 @@ The data catalog makes the data lake storage queryable and accessible, it gives 
 
 Most object-storage propagate events during the life cycle of its resident objects (uploaded files). Setting up a handler that listens for triggered events when a file is uploaded or updated allows us to get the metadata of the uploaded objects and add them to the comprehensive catalog, keeping it up to date. Picture blow shows the process of maintaining the **Farmy** comprehensive data lake catalog.
 
-![Farmy.ai data lake](/projects/static/catalog-building.svg)
+![Farmy.ai data lake](/blog/static/catalog-building.svg)
 
 ## Farmy Data lake Query layer
 

@@ -3,7 +3,7 @@ title : Image annotation pipeline
 date: 2021-09-26
 rank:
 image:
-  file: /projects/static/pipeline.jpg
+  file: /blog/static/pipeline.jpg
   credit:
     name: Sigmund
     link: https://unsplash.com/@sigmund
@@ -29,13 +29,13 @@ The data pipeline ingests images with associated metadata into the Data Lake and
 
 Our data annotation pipeline mainly manages various stages of the annotation process. It helps us reduce the overhead of manual tasks, such as moving images between phases, assigning tasks to annotators, checking completed phases, and finding conflicts in image annotations when exporting them.
 
-![Image annotation pipeline](/projects/static/pipeline_farmy_slide.png)
+![Image annotation pipeline](/blog/static/pipeline_farmy_slide.png)
 
-The building block of the data pipeline is the [Data Lake](/projects/farmy-data-lake). The pipeline is well integrated with the data lake, but it is unaware of the Data-Lake architecture and infrastructure.
+The building block of the data pipeline is the [Data Lake](/blog/farmy-data-lake). The pipeline is well integrated with the data lake, but it is unaware of the Data-Lake architecture and infrastructure.
  
 We perform data cleansing and annotation in an independent application, the data pipeline connects between the data lake and the annotation application by acting as a producer or consumer of the data lake through two layers one is the ingestion layer and the second is the query layer.
 
-![Image annotation pipeline](/projects/static/data-pipeline-intergarion-DL.svg)
+![Image annotation pipeline](/blog/static/data-pipeline-intergarion-DL.svg)
 
 ### Deploying the pipeline to AWS
 
@@ -43,7 +43,7 @@ The full architecture of the Farmy Data Lake and data pipeline is deployed on th
  
 The query layer provides preconfigured libraries and AWS Athena for searching AWS DynamoDB and AWS S3. The data pipeline is orchestrated by Apache Airflow deployed on an AWS EC2 instance. the pipeline uses Data Lake and Label Studio that is containerized in Docker and deployed on an EC2 instance.
 
-![Image annotation pipeline deployment](/projects/static/aws-complete-architercture_final.png)
+![Image annotation pipeline deployment](/blog/static/aws-complete-architercture_final.png)
 
 ### Orchestrating the pipeline
 

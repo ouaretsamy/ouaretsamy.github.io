@@ -2,7 +2,7 @@
 title : Facebook image Web Scrapper
 date: 2021-09-27
 image:
-  file: /projects/static/web-scraping.jpg
+  file: /blog/static/web-scraping.jpg
   credit:
     name: julian Schultz
     link: https://unsplash.com/@jordanharrison
@@ -31,11 +31,11 @@ Data Scraping can improve data collection. It is a systematic approach to collec
 
 **Facebook-Web-scraper** That We have built allows for automating of user login, collecting groups posts, processing each post data, and gathering all images(High-resolution images) which is by far the hardest task that took much of the time.
 
-![Facebook web scraper](/projects/static/web-scrapers.svg)
+![Facebook web scraper](/blog/static/web-scrapers.png)
 
 **Facebook-Web-scraper**  uses [Puppeteer](https://pptr.dev/), An open-source Chrome automation tool by google. The process of scraping posts and getting images consists of many steps, picture blow shows the major step to extract posts data and their images.
 
-![Facebook web scraper process](/projects/static/facebook-web-scraper-process.svg)
+![Facebook web scraper process](/blog/static/facebook-web-scraper-process.svg)
 
 We are going to explain those steps briefly
 1. The first step is to launch the Chrome instance using a command line, this step can work in an authentication mode or without authentication.

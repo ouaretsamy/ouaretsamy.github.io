@@ -2,7 +2,7 @@
 title : Solving wait for responses problem in puppeteer
 date: 2021-09-26
 image:
-  file: /projects/static/aron-visuals-waiting.jpg
+  file: /blog/static/aron-visuals-waiting.jpg
   credit:
     name: Aron Visuals
     link: https://unsplash.com/@aronvisuals
