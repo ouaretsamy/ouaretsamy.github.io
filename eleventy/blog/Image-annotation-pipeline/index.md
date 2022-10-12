@@ -8,6 +8,9 @@ image:
     name: Sigmund
     link: https://unsplash.com/@sigmund
 description: Building an image cleansing and annotation pipeline for Farmy.ai startup.
+tags : &topics
+  - Data engineering
+topics : *topics
 ---
 
 ## what is a data pipeline?
