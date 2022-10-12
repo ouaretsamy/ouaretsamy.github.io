@@ -5,16 +5,16 @@ eleventyExcludeFromCollections: true,
 title: 'Samy Ouaret',
 pagination: {
 data: 'collections.posts',
-size: 3,
+size: 6,
 alias: 'posts',
 before: function(data) {
-return data.slice(-3).map(post => post).reverse();
+return data.slice(-6).map(post => post).reverse();
 }
 }
 }
 pagination:
 data: collections.projects
-size: 3
+size: 6
 reverse: true
 alias: projects
 ---

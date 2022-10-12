@@ -1,14 +1,16 @@
-<div class="flex flex-col mb-4">
+<div class="flex flex-co md:flex-row flex-wrap">
 {%- for post in posts -%}
-   <div class="flex flex-col border-b border-dashed border-b-gray-300">
-   <a href="{{post.url}}" class="text-2xl block text-gray-800 hover:text-blue-700">
-   <time class="text-sm font-normal text-gray-700">{{post.date | readableDate}}</time><br>
+   <div class="md:w-1/3 w-full flex flex-col p-2">
+   <img defer src="{{post.data.image.file}}" alt="{{post.data.title}}" 
+   class="mt-4 mx-auto md:max-h-64 w-full" />
+   <a href="{{post.url}}" class="my-2 text-2xl block text-gray-800 hover:text-blue-700">
    {{post.data.title}}
    </a>
+    <p>{{post.data.description}}</p>
    <a href="{{post.url}}" class="text-lg my text-gray-800 underline hover:text-gray-900">
-   read &rarr;</a><br>
+   explore &rarr;</a><br>
    </div>
 {% else %}
-    <p class="text-center text-gray-600 text-lg">No Articles yet.</p>
+    <p class="text-center text-gray-600 text-lg">No post yet.</p>
 {% endfor %}
 </div>
