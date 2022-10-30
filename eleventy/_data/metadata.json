@@ -1,12 +1,12 @@
 {
   "title": "Samy Ouaret",
-  "url": "https://ouaretsamy.me",
+  "url": "https://samyouaret.com",
   "description": "Samy Ouaret, a PHP, React developer, web enthusiast.",
   "feed": {
     "subtitle": "Backend Engineer, PHP, Nodejs, and React developer, MS student in computer networking, web enthusiast.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://ouaretsamy.me/"
+    "id": "https://samyouaret.com/"
   },
   "author": {
     "name": "Samy Ouaret",
