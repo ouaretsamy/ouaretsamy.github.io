@@ -6,7 +6,7 @@ image:
   credit:
     name: CHUTTERSNAP
     link: https://unsplash.com/@chuttersnap
-description: In this Article will pass through setting AWS lambda and AWS and CloudFront to serve Dynamic binary content using terraform as IaC.
+description: In this Article we will pass through setting AWS lambda and AWS and CloudFront to serve Dynamic binary content using terraform as IaC.
 tags : &topics
   - AWS
   - Cloudfront
@@ -15,9 +15,9 @@ tags : &topics
 topics : *topics
 ---
 
-AWS lambda offers a great computing ability that makes it perfect for small and on-demand jobs, although it is usually used to handle different events raised by was serviced in an event-driven manner, when we often return response results we mainly use JSON to return the result.
+AWS lambda offers a great computing ability that makes it perfect for small and on-demand jobs, although it is usually used to handle different events raised by AWS services in an event-driven manner, when we often return response results we mainly use JSON to return the result.
 
-Another way to use lambda is to return binary data, in order to make that possible we need to use Functions URL and return the data as Base64 format, in this article we will explore how to serve read images from AWS S3, then process and serve those images as dynamic binary images using lambda and leverage the AWS CloudFront to cache the result.
+Another way to use lambda is to return binary data, in order to make that possible we need to use Functions URL and return the data as Base64 format, in this article we will explore how to read images from AWS S3, then process and serve those images as dynamic binary images using lambda and leverage the AWS CloudFront to cache the result.
 
 ## Walking through the project
 
@@ -118,7 +118,7 @@ let's explain the config used to create the function
 5. **runtime**: it specifies `Nodejs.16x` as the target runtime.
 6. **role**: assign the previously created role to lambda.
 
-### Enable lambda function url
+### Enabling Lambda function url
 
 Enabling function URL is a straightforward task using terraform we declare the `aws_lambda_function_url` resource.
 
@@ -129,7 +129,7 @@ resource "aws_lambda_function_url" "lambda_url" {
 }
 ```
 
-## Create s3 bucket
+## Creating s3 bucket
 
 We are going to create a public s3 bucket for this setup.
 
@@ -227,7 +227,7 @@ async function handler(event, context) {
 ```
 
 
-Now the important part is to specify to content type to image content type eg. `image/png`, more importantly, is to set the property `isBase64Encoded` to true so lambda will know that the body is base64 encoded.
+Now the important part is to specify to content type to image content type eg. `image/png`, more importantly, is to set the property `isBase64Encoded` to true so Lambda knows that the body is base64 encoded.
 
 Using the nodejs ```buffer.toString('base64`)```  will encode the sharp result(buffer) as base64.
 to call the function we simply call the function as follows
@@ -362,7 +362,7 @@ Then run apply the changes
     
     terraform apply
 
-## Clean up Our infrastructure
+## Cleaning up Our infrastructure
 
 Finally, let's clean the infrastructure we've created by running the terraform destroy command.
 
