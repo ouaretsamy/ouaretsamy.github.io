@@ -15,7 +15,7 @@ tags : &topics
 topics : *topics
 ---
 
-AWS lambda offers a great computing ability that makes it perfect for small and on-demand jobs, although it is usually used to handle different events raised by AWS services in an event-driven manner, when we often return response results we mainly use JSON to return the result.
+AWS lambda offers a great computing ability that makes it perfect for small and on-demand jobs, although it is usually used to handle different events raised by AWS services in an event-driven manner, when we often return response body as JSON.
 
 Another way to use lambda is to return binary data, in order to make that possible we need to use Functions URL and return the data as Base64 format, in this article we will explore how to read images from AWS S3, then process and serve those images as dynamic binary images using lambda and leverage the AWS CloudFront to cache the result.
 
