@@ -2,36 +2,38 @@
 layout: aboutme_layout.liquid
 ---
 
-# About me
+## About me
 
-Hey, I'm Samy, As a Backend Engineer, I started doing web development in 2015, I have Bachelor's degree in Computer Systems, and a Master's degree in Computer Networking and Multimedia. I Strive to write high-quality software and web applications. I care about details, clean code, tests, and APIs.
+I'm Samy Ouaret(Wareth), Software Engineer, with the necessary skills to decompose and Solve real problems. I Strive to write high-quality and maintainable web applications that serve the business and customers well. I'm also interested in the Cloud and the AWS Community Builders member.
+
+I started doing web development in 2015 as a solo web developer. I also worked as Software Engineer at [Farmy.ai](https://farmy.ai) and [Maystro Delivery](maystro-delivery.com).
 
 ## Skills
 
-- Strong knowledge of software development and modern web technologies, Rest APIs, HTTP, and other network protocols like SSL/TLS.
-- Strong knowledge of database design and normalization.
-- Ability to work in a team, good application of Agile frameworks and methodologies.
-- Basic knowledge of data engineering and DevOps.
-- Solid knowledge of writing tests and TDD.
-- Good knowledge of modern Front-end technologies(HTML5, CSS3, javascript, ES6, ReactJS).
+- Essential problem-solving skills, and willingness to learn and tackle new challenges.
+- A team player, with a good understanding of Agile, and the Scrum framework.
+- Solid knowledge of software development and web technologies, OOP, restful APIs, and source version control workflow.
+- Automating manual tasks, with a good understanding of cloud fundamentals, data engineering, and DevOps.
+- Good knowledge of database design and normalization.
 
 ## Experience
 
-**Software Engineer Intern Mar 2021-Sep 2021 (7mo) [Farmy.ai](https://farmy.ai)**
+**Software Engineer Feb 2022-Oct 2021 - [Maystro Delivery](maystro-delivery.com)**
 
-- Integrating **[Farmy.ai](https://farmy.ai)** data sources into a data lake.
-- Build a data pipeline for data cleansing and annotation.
-- Integrating data annotations REST APIs.
-- Automate data collection tasks, such as building web scrapers for social media images.
+- Create an Inventory Tracking Feature to Eliminate hundreds of Manual inventory checking, which led to satisfied customers, and Lifting the load on business workers.
+- Adapted the software to International Expansion, and owned the launching of the Internal software to a new country (Tunisia).
+- Migrated and Automated the deployment of the app to docker, and Nginx on Google cloud.
+- Implemented a new Authorization system, and migrate the legacy application with zero problems.
+- Implemented and automated the POS and packing slip printing.
+- Participated in E-Commerce solutions design, and fixing reported bugs and problems.
+- Deployment on **GCP** cloud.
 
-## Projects
+**Software Engineer Mar 2021-Sep 2021 - [Farmy.ai](https://farmy.ai)**
 
-You can find all projects on [projects](/projects), here are some of the major tasks:
-
-- Data Lake on AWS S3 and DynamoDB and Lambda for Farmy.ai startup.
-- Group posts Facebook web scraper.
-- Data annotation pipeline for Farmy.ai startup.
-- Npm package to solve puppeteer waits for response problem.
+- Participated in Designing and building a Data architecture based on Data lake architecture to enable Deep learning and data analytics.
+- Created web scrapers to collect images and metadata from Facebook groups using Puppeteer and Node.js, to exclude manual data collection.
+- Integrated and automated interaction with Data annotation tool to empower domain Experts to do image annotation.
+- Built a data pipeline for data cleansing and data annotation on the AWS cloud.
 
 ## Education
 
@@ -45,10 +47,8 @@ You can find all projects on [projects](/projects), here are some of the major t
 
 ## Technology Stack
 
-- **Languages and Frameworks**: Javascript, Typescript, NodeJs, Expressjs, HTML5, CSS3, ReactJS, TailwindCSS, Jest, PHP PHPUnit, Laravel.
-- **Databases**: PostgreSQL, MongoDB.
-- **Development tools**: Git, Github, Docker, GitHub Actions, AzureDevOps scrum, VSCode.
-- **Web servers**: Nginx core fundamentals (SSL/TLS Setup, Proxying, Load balancing, Caching, Static files serving).
-- **Others**: Apache Airflow, Python, AWS Lambda, AWS S3, AWS EC2.
-
+- **Languages and Tools**: Javascript, Node.js, Express.js, Docker, Git, PHP, SQL, GitHub Actions, HTML5, CSS3, TailwindCSS.
+- **Databases**: PostgreSQL, DynamoDB.
+- **Web servers**: Nginx core Features like Proxying, Load balancing, Caching, Static files serving, SSL/TLS.
+- **Others**: AWS cloud services like AWS Lambda, AWS S3, AWS EC2, CloudFront, and some GCP services like compute VMs and Python.
 

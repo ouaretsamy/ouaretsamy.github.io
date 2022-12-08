@@ -25,7 +25,7 @@ During this article we are going to use terraform to create a lambda function th
 
 ## Setting up lambda
 
-Before we go further we need first to create a role that allows Lambda to assume the role, then we give our function permission to read images stored on the s3 bucket, in addition to basic permissions to work with CloudWatch logs.
+Before we go further we need first to create a trust policy that allows Lambda to assume the role, then we give our function permission to read images stored on the s3 bucket, in addition to basic permissions to work with CloudWatch logs.
 
 and here is the terraform code that declares the basic execution role for lambda, including the S3 read permission.
 
@@ -43,7 +43,7 @@ resource "aws_iam_role" "lambda_role" {
        "Service": "lambda.amazonaws.com"
      },
      "Effect": "Allow",
-     "Sid": "AllowLamdaToAssumeRole"
+     "Sid": "AllowLambdaToAssumeRole"
    }
  ]
 }

@@ -16,11 +16,9 @@ topics : *topics
 
 ## Introduction
 
-This [Package](https://github.com/samyouaret/puppeteer-response-waiter) is useful when you need to wait for all responses to be received to do something like manipulating the DOM. Usually, when you need to **track many requests at once** or some requests are **lately received**, many people find it useful ([almosts 1000 download per week](https://www.npmjs.com/package/puppeteer-response-waiter)).
+If you previously tried to wait for API's responses to be received so do something like manipulating the DOM, there is a high chance that you have struggled to understand the behavior of using built-in puppeteer functions or other packages. Usually, when you need to **track many requests at once** or some requests are **lately received** like E2E testing or **scraping an infinite scroll** page and mostly you do not know which requests to track or to wait for.
 
-Some use cases could be **scraping an infinite scroll** page and mostly you do not know which requests to track or to wait for.
-
-It is a simple but powerful package, it may be used even to wait for thousands of requests at once and it guarantees to wait for all responses.
+I have built a simple but powerful package, it may be used even to wait for hundreds of requests at once and guarantees to wait for all responses.
 
 ## Quick Tutorial
 
