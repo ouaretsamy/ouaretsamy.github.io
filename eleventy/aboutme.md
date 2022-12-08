@@ -4,7 +4,7 @@ layout: aboutme_layout.liquid
 
 ## About me
 
-I'm Samy Ouaret(Wareth), Software Engineer, with the necessary skills to decompose and Solve real problems. I Strive to write high-quality and maintainable web applications that serve the business and customers well. I'm also interested in the Cloud and the AWS Community Builders member.
+I'm Samy Ouaret(Wareth), Software Engineer, with the necessary skills to decompose and Solve real problems. I Strive to write high-quality and maintainable web applications that serve the business and customers well. I'm also interested in the Cloud and am a member of the AWS Community Builders.
 
 I started doing web development in 2015 as a solo web developer. I also worked as Software Engineer at [Farmy.ai](https://farmy.ai) and [Maystro Delivery](maystro-delivery.com).
 
