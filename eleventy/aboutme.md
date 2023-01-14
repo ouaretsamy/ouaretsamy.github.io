@@ -26,7 +26,7 @@ I started doing web development in 2015 as a solo web developer. I also worked a
 - Implemented a new Authorization system, and migrate the legacy application with zero problems.
 - Implemented and automated the POS and packing slip printing.
 - Participated in E-Commerce solutions design, and fixing reported bugs and problems.
-- Deployment on **GCP** cloud.
+- Deployment on **Google cloud**.
 
 **Software Engineer Mar 2021-Sep 2021 - [Farmy.ai](https://farmy.ai)**
 
@@ -34,6 +34,12 @@ I started doing web development in 2015 as a solo web developer. I also worked a
 - Created web scrapers to collect images and metadata from Facebook groups using Puppeteer and Node.js, to exclude manual data collection.
 - Integrated and automated interaction with Data annotation tool to empower domain Experts to do image annotation.
 - Built a data pipeline for data cleansing and data annotation on the AWS cloud.
+
+**Web Developer Jan 2014 - Juin 2017 - [Super Soccer](http://supersoccer.live)**
+
+- Develop and Maintain websites for live football streaming and news.
+- Build User Interface with HTML, CSS, and JQuery.
+- Manage and create content for websites and manage social media pages.
 
 ## Education
 
@@ -50,5 +56,5 @@ I started doing web development in 2015 as a solo web developer. I also worked a
 - **Languages and Tools**: Javascript, Node.js, Express.js, Docker, Git, PHP, SQL, GitHub Actions, HTML5, CSS3, TailwindCSS.
 - **Databases**: PostgreSQL, DynamoDB.
 - **Web servers**: Nginx core Features like Proxying, Load balancing, Caching, Static files serving, SSL/TLS.
-- **Others**: AWS cloud services like AWS Lambda, AWS S3, AWS EC2, CloudFront, and some GCP services like compute VMs and Python.
+- **Others**: Python, AWS cloud services like AWS Lambda, AWS S3, AWS EC2, CloudFront, and some GCP services like compute VMs.
 
