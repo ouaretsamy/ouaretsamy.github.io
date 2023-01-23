@@ -163,7 +163,7 @@ ultimately to read images from s3 we need to install S3 AWS client sdk
 
     yarn add @aws-sdk/client-s3
 
-Then we need to import your packages to get started
+Then we need to import packages to get started
 
 ```js
 const sharp = require('sharp');
