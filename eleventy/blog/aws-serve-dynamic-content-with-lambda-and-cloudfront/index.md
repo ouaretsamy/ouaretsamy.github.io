@@ -15,19 +15,19 @@ tags : &topics
 topics : *topics
 ---
 
-AWS lambda offers a great computing ability that makes it perfect for small and on-demand jobs, although it is usually used to handle different events raised by AWS services in an event-driven manner, when we often return response body as JSON.
+AWS Lambda provides excellent computing power, making it ideal for small and on-demand jobs. Typically, we use Lambda to handle various events raised by AWS services in an event-driven manner, and the response body is mostly JSON, However, lambda can be used to return binary data.
 
-Another way to use lambda is to return binary data, in order to make that possible we need to use Functions URL and return the data as Base64 format, in this article we will explore how to read images from AWS S3, then process and serve those images as dynamic binary images using lambda and leverage the AWS CloudFront to cache the result.
+In this post, we will examine how to read images from AWS S3, then process and serve those images as dynamic binary data using lambda and leverage the AWS CloudFront to cache the result. In order to return binary data using lambda, we will use Functions URL and return the data as Base64 format. 
 
 ## Walking through the project
 
-During this article we are going to use terraform to create a lambda function that runs on top of Nodejs runtime(make sure to install terraform", the lambda function will read an s3 image specified in the url path along the two params( width and height), then we will use the [sharp]([https://](https://www.npmjs.com/package/sharp)) package to resize the image then return the newly resized image.
+Throughout this article, we will use Terraform to create a Lambda function that runs on top of the Nodejs runtime. The lambda function will read a s3 image specified in the url path and including two parameters (width and height), then we will use the [sharp]([https://](https://www.npmjs.com/package/sharp)) package to resize the image and return the newly resized image.
 
 ## Setting up lambda
 
-Before we go further we need first to create a trust policy that allows Lambda to assume the role, then we give our function permission to read images stored on the s3 bucket, in addition to basic permissions to work with CloudWatch logs.
+Before proceeding, we must first create a trust policy that allows Lambda to assume the role. We then grant our function permission to read images stored on the S3 bucket, as well as basic permissions to work with CloudWatch logs.
 
-and here is the terraform code that declares the basic execution role for lambda, including the S3 read permission.
+Here is the Terraform code that declares the basic execution role for lambda, including the S3 read permission.
 
 ```hcl
 
@@ -91,7 +91,8 @@ resource "aws_iam_role_policy_attachment" "attach_iam_policy_to_iam_role" {
 
 ## Creating Lambda function
 
-After we declare the role necessary for lambda, we will create our lambda function.
+After defining the lambda role, we will write our Lambda function.
+
 
 ```js
 resource "aws_lambda_function" "lambda_generator" {
@@ -109,18 +110,18 @@ resource "aws_lambda_function" "lambda_generator" {
 }
 ```
 
-let's explain the config used to create the function
+Let's go over the configuration that was used to create the function:
 
-1. **function_name**: the name of the function.
-2. **filename**: the zipped file that is used to deploy lambda.
-3. **index.handler**: the entry file(index.js) and the target function that handles the request(handler).
-4. **source_code_hash**: this is important to calculate the hash of our zipped file so terraform can decide whether to redeploy the function if the code change( so we get a new hash).
-5. **runtime**: it specifies `Nodejs.16x` as the target runtime.
-6. **role**: assign the previously created role to lambda.
+1. **function_name**: The name of the function.
+2. **filename**: The zipped file that is used to deploy lambda.
+3. **index.handler**: The entry file(index.js) and the target function that handles the request(handler).
+4. **source_code_hash**: This is important to calculate the hash of our zipped file so terraform can decide whether to redeploy the function if the code change( so we get a new hash).
+5. **runtime**: It specifies `Nodejs.16x` as the target runtime.
+6. **role**: Assign the previously created role to the function.
 
 ### Enabling Lambda function url
 
-Enabling function URL is a straightforward task using terraform we declare the `aws_lambda_function_url` resource.
+Enabling function URL is a simple task that we accomplish by defining the 'aws lambda function url' resource in Terraform.
 
 ```hcl
 resource "aws_lambda_function_url" "lambda_url" {
@@ -131,7 +132,7 @@ resource "aws_lambda_function_url" "lambda_url" {
 
 ## Creating s3 bucket
 
-We are going to create a public s3 bucket for this setup.
+For this setup, we will create a public S3 bucket.
 
 ```hcl
 resource "aws_s3_bucket" "s3_bucket" {
@@ -151,19 +152,19 @@ resource "aws_s3_bucket_public_access_block" "bucket_public_access" {
 ```
 ## Our Lambda code
 
-After we successfully created our resources let's write the lambda function that handles the code, we going to init the project using `yarn`(you can use npm it is just a preference).
+After we've successfully created our resources, we'll write the lambda function that will contains our code, and init the project with `yarn` (you can use npm it is just a preference).
 
     yarn init -y
 
-to resize the image we will use the [sharp]([https://](https://www.npmjs.com/package/sharp)) package.
+To resize the image we will use the [sharp]([https://](https://www.npmjs.com/package/sharp)) package.
 
     yarn add sharp
 
-ultimately to read images from s3 we need to install S3 AWS client sdk
+To read images from s3 we need to install S3 AWS client sdk
 
     yarn add @aws-sdk/client-s3
 
-Then we need to import packages to get started
+Then we need to import our packages to get started
 
 ```js
 const sharp = require('sharp');
@@ -226,42 +227,38 @@ async function handler(event, context) {
 }
 ```
 
+The important part now is to specify the content type to image content type, such as `image/png,` and to set the property `isBase64Encoded` to true so Lambda knows the body is base64 encoded.
 
-Now the important part is to specify to content type to image content type eg. `image/png`, more importantly, is to set the property `isBase64Encoded` to true so Lambda knows that the body is base64 encoded.
+Using nodejs ```buffer.toString('base64')```, will encode the sharp output as base64.
+Then We simply call the function as follows to invoke it.
 
-Using the nodejs ```buffer.toString('base64`)```  will encode the sharp result(buffer) as base64.
-to call the function we simply call the function as follows
+    https://{function-url}/image-key?w=300&h=3000
 
-    https://function-url/image-key?w=300&h=3000
-
-
-to package the function in a zip file
+To package the function in a zip file
 
     zip lambda_function.zip index.js node_modules yarn.lock package.json  -r
 
-One thing to do before we can use terraform is to export AWS credentials 
+We need to export AWS credentials before we can use Terraform
 
     export AWS_SECRET_ACCESS_KEY= AWS_ACCESS_KEY_ID=
 
-Plan the terraform setup, if that satisfies you then apply the config.
+Plan the Terraform setup, and if it satisfied you, apply the configuration.
 
     terraform plan
 
-Then run apply the changes
+Ultimately, apply the changes
     
     terraform apply
 
 
-## Adding Cloudfront Cache layer
+## Adding CloudFront Cache layer
 
-Let's add CloudFront to the cache of the result and reduce the computing resource and the cost.
+Let's use CloudFront to cache Lambda responses in order to save computing resources and reduce costs. We will create a CloudFront distribution with the function URL as the origin, and we will also create
 
-We are going to create a CloudFront distribution, and the origin will be the function URL, we will also create
+1. A cache policy in which the cache key is determined by the width and height parameters.
+2. An Origin request policy so that the width and height parameters can be passed to the Lambda function.
 
-1. A cache policy so the cache key will depend on width and height parameters.
-2. An Origin request policy so we can forward the width and height parameters to the Lambda function.
-
-For the purpose of testing, we use a TTL of 60s.
+We use a TTL of 60s for testing purposes.
 
 ```hcl
 
@@ -354,22 +351,22 @@ resource "aws_cloudfront_distribution" "lambda_distribution" {
 }
 ```
 
-Now again, Plan the terraform setup, if that satisfies you then apply the config.
+Plan the Terraform setup once more, and if that satisfies you, apply the config.
 
     terraform plan
 
-Then run apply the changes
+Then apply the changes
     
     terraform apply
 
 ## Cleaning up Our infrastructure
 
-Finally, let's clean the infrastructure we've created by running the terraform destroy command.
+Finally, let's clean the infrastructure we've built with the terraform destroy command.
 
     terraform destroy
 
 ## Conclusion
 
-In this article, we explored how we can use AWS lambda to serve binary content, and how we can leverage CloudFront to enhance our solution.
+In this article, we looked at how we can use AWS Lambda to serve binary content, as well as how we can use CloudFront to optimize our solution.
 
-Although we were able to serve binary content with lambda, I found it inefficient when the image size was medium/large(it took almost 1.3s on average), probably due to the process of encoding and decoding the content from and to base64. 
+Although we were able to serve binary content with lambda, I found it inefficient when the image size was medium/large (it took nearly 1.3s on average), most likely due to the process of converting the content from and to base64.

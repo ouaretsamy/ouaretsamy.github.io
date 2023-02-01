@@ -14,7 +14,7 @@ tags : &topics
 topics: *topics
 ---
 
-When Building API's, backend services we usually handle many critical operations, some of these operations could not be executed more than once, letting that occurs could destruct the service integrity and its behavior, well many time you see web developers talks about http verbs, and it is mentioned that using POST is not idempotent, unlike PATCH which is semantically idempotent, notably these verbs have to actual restriction, they are just semantics.
+When Building API's, or backend services, we usually handle many critical operations, some of these operations could not be executed more than once, letting that occurs could destruct the service integrity and its behavior, well many time you see web developers talks about http verbs, and it is mentioned that using POST is not idempotent, unlike PATCH which is semantically idempotent, notably these verbs have to actual restriction, they are just semantics.
 
 ## What is Idempotency
 
