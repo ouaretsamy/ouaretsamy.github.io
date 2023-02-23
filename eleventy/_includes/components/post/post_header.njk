@@ -3,10 +3,13 @@
     <h1 style="margin-bottom: 0;" id="post-tilte" class="text-gray-800">{{title}}</h1>
     <time class="text-sm ml-1 text-gray-700">{{ date | readableDate }}</time>
   {%- endif -%}
-  {%- if image and image.file -%}
-    <img defer src="{{image.file}}" alt="{{title}}" class="mt-4 mx-auto max-w-full" />
-    {%- if image.credit -%}
-    <p class="text-center text-md">Picture by <a class="text-blue-700" href="{{image.credit.link}}">{{image.credit.name}}</a></p>
+  {%- if image.hideOnPost -%}
+  {%- else -%}
+    {%- if image and image.file -%}
+      <img defer src="{{image.file}}" alt="{{title}}" class="mt-4 mx-auto max-w-full" />
+      {%- if image.credit -%}
+        <p class="text-center text-md">Picture by <a class="text-blue-700" href="{{image.credit.link}}">{{image.credit.name}}</a></p>
+      {%- endif -%}
     {%- endif -%}
   {%- endif -%}
   {%- if description -%}
