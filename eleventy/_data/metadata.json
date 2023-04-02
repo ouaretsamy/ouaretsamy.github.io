@@ -3,7 +3,7 @@
   "url": "https://samyouaret.com",
   "description": "Samy Ouaret, a PHP, React developer, web enthusiast.",
   "feed": {
-    "subtitle": "Backend Engineer, PHP, Nodejs, and React developer, MS student in computer networking, web enthusiast.",
+    "subtitle": "I am a Software Engineer, I'm interested in Backend engineering, Cloud computing, data engineering, and web scraping. I am also a part of AWS Community Builders.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://samyouaret.com/"
@@ -14,7 +14,7 @@
     "image_sm": "/static/images/samyouaret150x150.jpg",
     "image_md": "/static/images/samyouaret450x450.jpg",
     "new_image": "/static/images/samyouaret-pic.jpg",
-    "description": "Backend Engineer, PHP developer, Nodejs, React, MS student in computer networking, web enthusiast.",
+    "description": "I am a Software Engineer, I'm interested in Backend engineering, Cloud computing, data engineering, and web scraping. I am also a part of AWS Community Builders.",
     "short_description": "Backend Engineer"
   },
   "links": {
