@@ -1,5 +1,5 @@
 ---
-title : high available and scalable RDS with Multi-AZ and read replicas
+title : High available and scalable RDS with Multi-AZ and read replicas
 date: 2023-02-01
 image:
   file: /blog/static/multi-az-rds.png
@@ -16,9 +16,9 @@ tags : &topics
 topics : *topics
 ---
 
-Deploying and monitoring relational databases could be overwhelming. Amazon RDS(Relational Databases service) is a managed service that makes it easier to set up, run, and scale Relational databases. it supports PostgreSQL, MySQL, MariaDB, PostgreSQL, Oracle, and SQL Server.
+Amazon Relational Database Service (RDS) simplifies the setup, management, and scaling of relational databases in the cloud. Most relational databases are supported, including PostgreSQL,  SQL Server, Oracle, MySQL, and MariaDB.
 
-In this article, we will see how to manage a PostgreSQL on RDS using Terraform, then we will look at RDS Multi-AZ, and finally, we will show how to scale our Rds database using Read-replicas.
+In this article, we will look at how to improve the availability and reliability of a PostgreSQL database on RDS using Terraform, we will see how to setup RDS Multi-AZ, and lastly how to scale our Rds database using Read-replicas.
 
 ## What is a Multi-Az?
 
