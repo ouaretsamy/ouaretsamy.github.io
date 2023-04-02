@@ -6,7 +6,9 @@ layout: aboutme_layout.liquid
 
 I'm Samy Ouaret(Wareth), Software Engineer, with the necessary skills to decompose and Solve real problems. I Strive to write high-quality and maintainable web applications that serve the business and customers well. I'm also interested in the Cloud and am a member of the AWS Community Builders.
 
-I started doing web development in 2015 as a solo web developer. I also worked as Software Engineer at [Farmy.ai](https://farmy.ai) and [Maystro Delivery](maystro-delivery.com).
+I work currently as a Backend Engineer at <a href="https://smartinia.com" class="text-blue-700" target="_blank" rel="noopener noreferrer">Smartinia</a>.
+, I started doing web development in 2015 as a solo web developer. I also worked as Software Engineer at [Farmy.ai](https://farmy.ai) and [Maystro Delivery](maystro-delivery.com).
+
 
 ## Skills
 
@@ -17,6 +19,10 @@ I started doing web development in 2015 as a solo web developer. I also worked a
 - Good knowledge of database design and normalization.
 
 ## Experience
+
+**Software Engineer March 2023 - present [Smartinia](https://smartinia.com)**
+
+Building and creating E-commerce solutions for small and medium businesses, and helping them to grow their business online.
 
 **Software Engineer Feb 2022-Oct 2021 - [Maystro Delivery](maystro-delivery.com)**
 
