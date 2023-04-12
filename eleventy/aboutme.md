@@ -20,6 +20,8 @@ I work currently as a Backend Engineer at <a href="https://smartinia.com" class=
 
 ## Experience
 
+**Backend Developer 2020 - present **Freelance**.
+
 **Software Engineer March 2023 - present [Smartinia](https://smartinia.com)**
 
 Building and creating E-commerce solutions for small and medium businesses, and helping them to grow their business online.
