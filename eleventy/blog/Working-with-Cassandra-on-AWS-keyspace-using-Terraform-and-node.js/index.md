@@ -1,5 +1,5 @@
 ---
-title: Working with Cassandra on AWS keyspace using Terraform
+title: Working with Cassandra on AWS keyspace using Terraform and Node.js
 date: 2024-01-01
 image:
   file: /blog/static/aws-keyspace-terraform.jpg
