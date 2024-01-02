@@ -215,7 +215,7 @@ Result: [
 ]
 ```
 
-We have successfully deployed Amazon keyspace using Terraform and created a simple Node.js App to write and update our table. Here is the link to the Github repository [Repository](https://github.com/samyouaret/keyspaces-terraform).
+We have successfully deployed Amazon keyspace using Terraform and created a simple Node.js app to write to and read from our table. Here is the link to the Github repository [Repository](https://github.com/samyouaret/keyspaces-terraform).
 
 At the end, please do not forget to destroy AWS resources.
 
@@ -225,4 +225,4 @@ terraform destroy
 
 ## Conclusion
 
-In this article, we did a walkthrough to work with Apache Cassandra on AWS Keyspaces and built a Node.js application that interacts with Apache Cassandra. This article serves as a foundation for using Cassandra database in AWS Keyspaces with Node.js.
+In this article, we did a walkthrough to work with Apache Cassandra on AWS Keyspaces and built a Node.js application that interacts with Apache Cassandra. This article could serve as a foundation for working with the Cassandra database in AWS Keyspaces with Terraform and Node.js.
