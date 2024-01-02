@@ -95,9 +95,9 @@ resource "aws_keyspaces_table" "products_table" {
 
 #### Explanation
 
-1. **`table_name`:** Specifies the name of the table. In this example, it's set to "example_table."
+1. **`table_name`:** Specifies the name of the table. In this example, it's set to ```products```.
 
-2. **`keyspace_name`:** References the name of the keyspace where the table should be created. It is connected to the `aws_keyspaces_keyspace` resource using `aws_keyspaces_keyspace.example.name.`
+2. **`keyspace_name`:** References the name of the keyspace where the table should be created. It is connected to the `aws_keyspaces_keyspace` resource using `aws_keyspaces_keyspace.ecommerce_keyspace.name`.
 3. **`schema_definition`:** Allows us to define table columns and their types. we also specify the partition key of the table (`product_sku`).
 
 At this stage, we are ready to plan and apply our Terraform file. 
@@ -225,4 +225,4 @@ terraform destroy
 
 ## Conclusion
 
-In this article, we did a walkthrough to work with Apache Cassandra on AWS Keyspaces and built a Node.js application that interacts with Apache Cassandra. This example serves as a foundation for using the Cassandra database in the AWS cloud.
+In this article, we did a walkthrough to work with Apache Cassandra on AWS Keyspaces and built a Node.js application that interacts with Apache Cassandra. This article serves as a foundation for using Cassandra database in AWS Keyspaces with Node.js.
