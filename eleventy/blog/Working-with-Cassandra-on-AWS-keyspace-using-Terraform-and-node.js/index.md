@@ -108,12 +108,6 @@ We run the plan command
 terraform plan
 ```
 
-We run the plan command
-
-```bash
-terraform plan
-```
-
 Let'a apply the changes
     
 ```bash
