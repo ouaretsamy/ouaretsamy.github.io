@@ -108,6 +108,19 @@ We run the plan command
 terraform plan
 ```
 
+We run the plan command
+
+```bash
+terraform plan
+```
+
+Let'a apply the changes
+    
+```bash
+terraform apply
+```
+
+
 ### Connecting to AWS Keyspaces with Nodejs
 
 Now we are ready to connect to our new AWS keyspace using the ```cassandra-driver``` and ```aws-sigv4-auth-cassandra-plugin``` packages.

@@ -164,6 +164,12 @@ Then we can run the plan command
 terraform plan
 ```
 
+Now we can apply the changes
+    
+```bash
+terraform apply
+```
+
 ### Connecting to RabbitMQ with Nodejs
 
 Now we are ready to connect to our RabbitMQ broker using the ```amqplib``` package.
@@ -258,4 +264,4 @@ We have successfully deployed RabbitMQ with Amazon MQ using Terraform and create
 
 ## Conclusion
 
-In this article, we did a walkthrough of deploying RabbitMQ with Amazon MQ using Terraform, streamlining the setup RabbitMQ in AWS and show example of connecting to RabbtitMQ broker with Node.js-based producer and consumer.
+In this article, we did a walkthrough of deploying RabbitMQ with Amazon MQ using Terraform, streamlining the deployment of RabbitMQ in AWS and show example of connecting to the broker using Node.js-based producer and consumer.
