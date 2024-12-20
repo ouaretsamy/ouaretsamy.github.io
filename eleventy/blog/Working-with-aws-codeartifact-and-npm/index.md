@@ -267,13 +267,13 @@ you can find the npm package repository on github [Github repository](https://gi
 
 Common issues and solutions:
 
-1. Authentication Failures
+1. **Authentication Failures**
    - Ensure your CodeArtifact domain and repository names are correct.
    - Ensure that the `publishConfig` in `package.json` is using the correct registry URL.
    - Double-check your AWS credentials in GitHub secrets.
    - Verify IAM permissions are correct.
 
-2. Publishing Errors
+2. **Publishing Errors**
    - Check that the version number is unique.
    - Ensure all required files are included in your package.
 
@@ -292,7 +292,7 @@ Common issues and solutions:
 
 ## Conclusion
 
-This guide has walked you through the complete process of setting up automated NPM package publishing to AWS CodeArtifact using GitHub Actions. We covered the essential steps from initial AWS setup through to automated publishing: creating the necessary IAM user with appropriate permissions, configuring the CodeArtifact repository, setting up GitHub repository secrets, and implementing a GitHub Actions workflow.By following this guide, you've automated the pipeline for publishing and managing NPM packages within your organization. 
+This guide has walked you through the complete process of setting up automated NPM package publishing to AWS CodeArtifact using GitHub Actions. We covered the essential steps from initial AWS setup through to automated publishing: creating the necessary IAM user with appropriate permissions, configuring the CodeArtifact repository, setting up GitHub repository secrets, and implementing a GitHub Actions workflow. By following this guide, you've automated the pipeline for publishing and managing NPM packages within your organization. 
 
 The implementation ensures proper version control, maintains security through AWS IAM roles, and automates the publishing process through GitHub Actions. Whether you're working with private packages or utilizing the optional npm proxy setup for public packages, this infrastructure provides a reliable foundation for your organization's package management needs.
 
